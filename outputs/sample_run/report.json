@@ -1,0 +1,2052 @@
+{
+  "meta": {
+    "dataset": "100.json",
+    "mode": "openai",
+    "num_records": 200,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 100,
+      "em": 0.9,
+      "avg_attempts": 1,
+      "avg_token_estimate": 1741.07,
+      "avg_latency_ms": 2530.26
+    },
+    "reflexion": {
+      "count": 100,
+      "em": 0.93,
+      "avg_attempts": 1.23,
+      "avg_token_estimate": 2203.78,
+      "avg_latency_ms": 3725.26
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.03,
+      "attempts_abs": 0.23,
+      "tokens_abs": 462.71,
+      "latency_abs": 1195.0
+    }
+  },
+  "failure_modes": {
+    "react": {
+      "none": 90,
+      "wrong_final_answer": 10
+    },
+    "reflexion": {
+      "none": 93,
+      "wrong_final_answer": 7
+    }
+  },
+  "examples": [
+    {
+      "qid": "hp1",
+      "agent_type": "react",
+      "gold_answer": "Arthur's Magazine",
+      "predicted_answer": "Arthur's Magazine was started first in 1844, while First for Women was started in 1989.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp2",
+      "agent_type": "react",
+      "gold_answer": "Delhi",
+      "predicted_answer": "Delhi",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp3",
+      "agent_type": "react",
+      "gold_answer": "President Richard Nixon",
+      "predicted_answer": "Milhouse was named after President Richard Nixon's middle name.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp4",
+      "agent_type": "react",
+      "gold_answer": "American",
+      "predicted_answer": "June Miller, James Henry Miller's wife, was American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp5",
+      "agent_type": "react",
+      "gold_answer": "alcohol",
+      "predicted_answer": "Ethanol",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp6",
+      "agent_type": "react",
+      "gold_answer": "Jonathan Stark",
+      "predicted_answer": "Henri Leconte won 1 Grand Slam title, while Jonathan Stark won 2 Grand Slam titles. Therefore, Jonathan Stark won more Grand Slam titles.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp7",
+      "agent_type": "react",
+      "gold_answer": "Crambidae",
+      "predicted_answer": "Nepita",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp8",
+      "agent_type": "react",
+      "gold_answer": "Badr Hari",
+      "predicted_answer": "Badr Hari",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp9",
+      "agent_type": "react",
+      "gold_answer": "2006",
+      "predicted_answer": "Het Huis Anubis first aired in September 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp10",
+      "agent_type": "react",
+      "gold_answer": "6.213 km long",
+      "predicted_answer": "The length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged is 6.213 km.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp11",
+      "agent_type": "react",
+      "gold_answer": "Jaime Meline",
+      "predicted_answer": "El-P",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp12",
+      "agent_type": "react",
+      "gold_answer": "Walter Darwin Coy",
+      "predicted_answer": "Walter Coy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp13",
+      "agent_type": "react",
+      "gold_answer": "United States",
+      "predicted_answer": "Die Rh\u00f6ner S\u00e4uw\u00e4ntzt originated in Eichenzell-L\u00fctter in Hessen, Germany.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp14",
+      "agent_type": "react",
+      "gold_answer": "Super Bowl XLVIII",
+      "predicted_answer": "Malcolm Smith was named Most Valuable Player of Super Bowl XLVIII.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp15",
+      "agent_type": "react",
+      "gold_answer": "US 60",
+      "predicted_answer": "U.S. Highway 60",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp16",
+      "agent_type": "react",
+      "gold_answer": "2006",
+      "predicted_answer": "Annette Bening received a star on the Hollywood Walk of Fame in 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp17",
+      "agent_type": "react",
+      "gold_answer": "Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",
+      "predicted_answer": "The current members of Metallica, who wrote the music for Hurt Locker The Musical, are James Hetfield, Lars Ulrich, Kirk Hammett, and Robert Trujillo.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp18",
+      "agent_type": "react",
+      "gold_answer": "Fox",
+      "predicted_answer": "\"Human Error\" is the season finale of the third season of \"House,\" which aired on the Fox network.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp19",
+      "agent_type": "react",
+      "gold_answer": "2017",
+      "predicted_answer": "2017",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp20",
+      "agent_type": "react",
+      "gold_answer": "Nevada",
+      "predicted_answer": "Nevada",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp21",
+      "agent_type": "react",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "The drug stores of which the CEO is Warren Bryant are located in California.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp22",
+      "agent_type": "react",
+      "gold_answer": "Kelli Ward",
+      "predicted_answer": "Kelli Ward",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp23",
+      "agent_type": "react",
+      "gold_answer": "The Wolfhounds",
+      "predicted_answer": "Hole was founded first in 1989, while The Wolfhounds were formed in 1985.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp24",
+      "agent_type": "react",
+      "gold_answer": "16-year-old",
+      "predicted_answer": "Katniss Everdeen, the female main protagonist of \"Catching Fire,\" is 16 years old.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp25",
+      "agent_type": "react",
+      "gold_answer": "World War II",
+      "predicted_answer": "Chang Ucchin was born in Korea during a time that ended with the conclusion of World War II in 1945.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp26",
+      "agent_type": "react",
+      "gold_answer": "Todd Phillips",
+      "predicted_answer": "Todd Phillips",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp27",
+      "agent_type": "react",
+      "gold_answer": "Carol Lawrence",
+      "predicted_answer": "Eartha Kitt",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp28",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, Pavel Urysohn and Leonid Levin were not known for the same type of work; Urysohn was a mathematician focused on topology, while Levin is a computer scientist.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp29",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, The New Pornographers is a Canadian rock band, while Kings of Leon is an American rock band.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp30",
+      "agent_type": "react",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp31",
+      "agent_type": "react",
+      "gold_answer": "Amy Jo Johnson",
+      "predicted_answer": "Amy Jo Johnson",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp32",
+      "agent_type": "react",
+      "gold_answer": "Aleksander Ford",
+      "predicted_answer": "Aleksander Ford was born first on 24 November 1908, while Pablo Trapero was born on 4 October 1971.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp33",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Jane and First for Women are women's magazines.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp34",
+      "agent_type": "react",
+      "gold_answer": "director",
+      "predicted_answer": "Both Nicholas Ray and Elia Kazan are film directors.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp35",
+      "agent_type": "react",
+      "gold_answer": "Roseau, Minnesota, USA",
+      "predicted_answer": "The company that purchased Aixam, Polaris Industries, is based in Roseau, Minnesota, USA.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp36",
+      "agent_type": "react",
+      "gold_answer": "The Saimaa Gesture",
+      "predicted_answer": "The Saimaa Gesture",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp37",
+      "agent_type": "react",
+      "gold_answer": "David Lee Roth",
+      "predicted_answer": "David Lee Roth was inducted into the Rock and Roll Hall of Fame.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp38",
+      "agent_type": "react",
+      "gold_answer": "Nassau County",
+      "predicted_answer": "Nassau County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp39",
+      "agent_type": "react",
+      "gold_answer": "Australia",
+      "predicted_answer": "Australia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp40",
+      "agent_type": "react",
+      "gold_answer": "California",
+      "predicted_answer": "California",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp41",
+      "agent_type": "react",
+      "gold_answer": "Dessau",
+      "predicted_answer": "Dessau, Germany",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp42",
+      "agent_type": "react",
+      "gold_answer": "Roman Catholic",
+      "predicted_answer": "Roman Catholic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp43",
+      "agent_type": "react",
+      "gold_answer": "The Joshua Tree",
+      "predicted_answer": "The album is \"The Chimes.\"",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp44",
+      "agent_type": "react",
+      "gold_answer": "Ulster County",
+      "predicted_answer": "Ulster County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp45",
+      "agent_type": "react",
+      "gold_answer": "Tammy Wynette",
+      "predicted_answer": "Tammy Wynette",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp46",
+      "agent_type": "react",
+      "gold_answer": "Sir Francis Nethersole",
+      "predicted_answer": "Elizabeth Stuart was born first, on August 19, 1596, while Francis Nethersole was born later, in 1587.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp47",
+      "agent_type": "react",
+      "gold_answer": "ingredients in beer",
+      "predicted_answer": "The Hacker-Pschorr Brewery must limit the ingredients in beer to comply with the German Reinheitsgebot Purity Law.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp48",
+      "agent_type": "react",
+      "gold_answer": "Dennis Howard Marks",
+      "predicted_answer": "Howard Marks",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp49",
+      "agent_type": "react",
+      "gold_answer": "Robert Sheehan",
+      "predicted_answer": "Robert Sheehan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp50",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, Gin and tonic is based on gin, while Paloma is based on tequila.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp51",
+      "agent_type": "react",
+      "gold_answer": "Glenn Hughes",
+      "predicted_answer": "Glenn Hughes is older than Ross Lynch.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp52",
+      "agent_type": "react",
+      "gold_answer": "March 28, 1941",
+      "predicted_answer": "Alf Clausen was born on March 28, 1941.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp53",
+      "agent_type": "react",
+      "gold_answer": "standard gauge track",
+      "predicted_answer": "Standard gauge track",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp54",
+      "agent_type": "react",
+      "gold_answer": "Sex and the City",
+      "predicted_answer": "Cynthia Nixon received the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series for her role in \"Sex and the City.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp55",
+      "agent_type": "react",
+      "gold_answer": "Kato",
+      "predicted_answer": "Bruce Lee played the character Kato in \"The Green Hornet\" television series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp56",
+      "agent_type": "react",
+      "gold_answer": "England",
+      "predicted_answer": "England",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp57",
+      "agent_type": "react",
+      "gold_answer": "Province of Buenos Aires",
+      "predicted_answer": "The Estadio Ciudad de La Plata is owned by the Province of Buenos Aires.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp58",
+      "agent_type": "react",
+      "gold_answer": "Robert Zemeckis",
+      "predicted_answer": "Robert Zemeckis",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp59",
+      "agent_type": "react",
+      "gold_answer": "1932",
+      "predicted_answer": "1933",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp60",
+      "agent_type": "react",
+      "gold_answer": "nine",
+      "predicted_answer": "\"Bette Davis Eyes\" spent nine weeks at No. 1 on the \"Billboard\" Hot 100.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp61",
+      "agent_type": "react",
+      "gold_answer": "Saint Motel",
+      "predicted_answer": "Saint Motel has more members than Curve.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp62",
+      "agent_type": "react",
+      "gold_answer": "South Park",
+      "predicted_answer": "\"South Park\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp63",
+      "agent_type": "react",
+      "gold_answer": "Boston College",
+      "predicted_answer": "Boston College",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp64",
+      "agent_type": "react",
+      "gold_answer": "Victor John Mature",
+      "predicted_answer": "Victor Mature",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp65",
+      "agent_type": "react",
+      "gold_answer": "Canada",
+      "predicted_answer": "Canada",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp66",
+      "agent_type": "react",
+      "gold_answer": "Conservative",
+      "predicted_answer": "The man who officially opened the Royal Spa Centre in 1972, Anthony Eden, was a member of the Conservative Party (UK).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp67",
+      "agent_type": "react",
+      "gold_answer": "Salaam Bombay",
+      "predicted_answer": "The Oscar-nominated film written by Sooni Taraporevala is \"Salaam Bombay.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp68",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Tim McIlrath and Spike Slawson are American punk rock musicians.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp69",
+      "agent_type": "react",
+      "gold_answer": "Zooey Deschanel",
+      "predicted_answer": "John Goodman starred alongside Zooey Deschanel in \"Gigantic.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp70",
+      "agent_type": "react",
+      "gold_answer": "15",
+      "predicted_answer": "15",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp71",
+      "agent_type": "react",
+      "gold_answer": "Keyshia Cole",
+      "predicted_answer": "Keyshia Cole",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp72",
+      "agent_type": "react",
+      "gold_answer": "filmmaker",
+      "predicted_answer": "Both Am Rong and Alexandre Rockwell are filmmakers.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp73",
+      "agent_type": "react",
+      "gold_answer": "Golf Magazine",
+      "predicted_answer": "Golf Magazine is owned by Time Inc.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp74",
+      "agent_type": "react",
+      "gold_answer": "Mr. Burns",
+      "predicted_answer": "The bowling team that includes the school bus driver for Springfield Elementary School, Otto, is funded by Mr. Burns.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp75",
+      "agent_type": "react",
+      "gold_answer": "Washington, D.C.",
+      "predicted_answer": "Washington, D.C.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp76",
+      "agent_type": "react",
+      "gold_answer": "Band of Brothers",
+      "predicted_answer": "Peter O'Meara portrayed Norman Dike in the HBO miniseries \"Band of Brothers.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp77",
+      "agent_type": "react",
+      "gold_answer": "Christopher Hitchens",
+      "predicted_answer": "Christopher Hitchens",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp78",
+      "agent_type": "react",
+      "gold_answer": "R Adams Cowley",
+      "predicted_answer": "R Adams Cowley developed the prototype pacemaker used by the 34th President of the USA, Dwight D. Eisenhower.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp79",
+      "agent_type": "react",
+      "gold_answer": "Dennis Publishing",
+      "predicted_answer": "Dennis Publishing Ltd.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp80",
+      "agent_type": "react",
+      "gold_answer": "Garth Brooks",
+      "predicted_answer": "Garth Brooks performed the lead single \"Friends in Low Places\" on the album \"No Fences,\" which reached #1 on Billboard.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp81",
+      "agent_type": "react",
+      "gold_answer": "Dirt",
+      "predicted_answer": "Dirt",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp82",
+      "agent_type": "react",
+      "gold_answer": "The Fantastic The",
+      "predicted_answer": "The lead singer and guitarist in the Portland, Oregon rock band Portugal. The Man goes by the alias The Fantastic The.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp83",
+      "agent_type": "react",
+      "gold_answer": "1988",
+      "predicted_answer": "S\u00e9bastien Buemi, the winner of the 2016 Marrakesh ePrix, was born on October 31, 1988.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp84",
+      "agent_type": "react",
+      "gold_answer": "Train to Busan",
+      "predicted_answer": "Train to Busan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp85",
+      "agent_type": "react",
+      "gold_answer": "722,664",
+      "predicted_answer": "722,664",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp86",
+      "agent_type": "react",
+      "gold_answer": "Max Gail",
+      "predicted_answer": "Max Gail",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp87",
+      "agent_type": "react",
+      "gold_answer": "rock band",
+      "predicted_answer": "Both Richard Hawley and Chicago's Catherine belong to the music industry.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp88",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Pam Veasey and Jon Jost are American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp89",
+      "agent_type": "react",
+      "gold_answer": "dancer Gregory Hines",
+      "predicted_answer": "Maurice Hines and his brother Gregory Hines were famous for their contributions to dance and musical theater.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp90",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "No, the New Orleans Outfall Canals are not the same length as the Augusta Canal. The Augusta Canal is approximately 13 miles long, while the lengths of the individual New Orleans Outfall Canals are not specified in the provided context.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp91",
+      "agent_type": "react",
+      "gold_answer": "Gillette Stadium",
+      "predicted_answer": "Gillette Stadium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp92",
+      "agent_type": "react",
+      "gold_answer": "Fu Manchu",
+      "predicted_answer": "Fu Manchu",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp93",
+      "agent_type": "react",
+      "gold_answer": "CEO of Lionsgate UK & Europe",
+      "predicted_answer": "Zygi Kamasa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp94",
+      "agent_type": "react",
+      "gold_answer": "Swoosie Kurtz",
+      "predicted_answer": "Swoosie Kurtz",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp95",
+      "agent_type": "react",
+      "gold_answer": "Lullwater Estate",
+      "predicted_answer": "Lullwater Estate",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp96",
+      "agent_type": "react",
+      "gold_answer": "the Sumerians",
+      "predicted_answer": "The type of script used in autographs is cuneiform, which was invented by the Sumerians.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp97",
+      "agent_type": "react",
+      "gold_answer": "17%",
+      "predicted_answer": "Approximately 17% of the global population is made up of the Han Chinese, the ethnic group Princess Fragrant was produced to improve relations with.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp98",
+      "agent_type": "react",
+      "gold_answer": "David Lyle Boren",
+      "predicted_answer": "David Boren",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp99",
+      "agent_type": "react",
+      "gold_answer": "Lawrence County",
+      "predicted_answer": "The Thoen Stone is on display at the Adams Museum & House in Lawrence County, South Dakota.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp100",
+      "agent_type": "react",
+      "gold_answer": "MedStar Washington Hospital Center",
+      "predicted_answer": "MedStar Washington Hospital Center is the largest private hospital in Washington, D.C.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp1",
+      "agent_type": "reflexion",
+      "gold_answer": "Arthur's Magazine",
+      "predicted_answer": "Arthur's Magazine was started first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp2",
+      "agent_type": "reflexion",
+      "gold_answer": "Delhi",
+      "predicted_answer": "Delhi",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp3",
+      "agent_type": "reflexion",
+      "gold_answer": "President Richard Nixon",
+      "predicted_answer": "Milhouse was named after President Richard Nixon.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp4",
+      "agent_type": "reflexion",
+      "gold_answer": "American",
+      "predicted_answer": "American",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp5",
+      "agent_type": "reflexion",
+      "gold_answer": "alcohol",
+      "predicted_answer": "Alcohol",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp6",
+      "agent_type": "reflexion",
+      "gold_answer": "Jonathan Stark",
+      "predicted_answer": "Henri Leconte won one Grand Slam title (French Open men's doubles), while Jonathan Stark won two Grand Slam titles (1994 French Open Men's Doubles and 1995 Wimbledon Mixed Doubles). Therefore, Jonathan Stark won more Grand Slam titles than Henri Leconte.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "hp7",
+      "agent_type": "reflexion",
+      "gold_answer": "Crambidae",
+      "predicted_answer": "Nepita",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp8",
+      "agent_type": "reflexion",
+      "gold_answer": "Badr Hari",
+      "predicted_answer": "Badr Hari",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp9",
+      "agent_type": "reflexion",
+      "gold_answer": "2006",
+      "predicted_answer": "September 2006",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp10",
+      "agent_type": "reflexion",
+      "gold_answer": "6.213 km long",
+      "predicted_answer": "6.213 km",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp11",
+      "agent_type": "reflexion",
+      "gold_answer": "Jaime Meline",
+      "predicted_answer": "El-P",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp12",
+      "agent_type": "reflexion",
+      "gold_answer": "Walter Darwin Coy",
+      "predicted_answer": "Walter Coy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp13",
+      "agent_type": "reflexion",
+      "gold_answer": "United States",
+      "predicted_answer": "Die Rh\u00f6ner S\u00e4uw\u00e4ntzt originated in Eichenzell-L\u00fctter, Hessen, Germany.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp14",
+      "agent_type": "reflexion",
+      "gold_answer": "Super Bowl XLVIII",
+      "predicted_answer": "Malcolm Smith was named Most Valuable Player of Super Bowl XLVIII.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp15",
+      "agent_type": "reflexion",
+      "gold_answer": "US 60",
+      "predicted_answer": "U.S. Highway 60",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp16",
+      "agent_type": "reflexion",
+      "gold_answer": "2006",
+      "predicted_answer": "2006",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp17",
+      "agent_type": "reflexion",
+      "gold_answer": "Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",
+      "predicted_answer": "James Hetfield, Lars Ulrich, Kirk Hammett, Robert Trujillo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp18",
+      "agent_type": "reflexion",
+      "gold_answer": "Fox",
+      "predicted_answer": "Fox",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp19",
+      "agent_type": "reflexion",
+      "gold_answer": "2017",
+      "predicted_answer": "2017",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp20",
+      "agent_type": "reflexion",
+      "gold_answer": "Nevada",
+      "predicted_answer": "Nevada",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp21",
+      "agent_type": "reflexion",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "The drug stores of which the CEO is Warren Bryant are located in California.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp22",
+      "agent_type": "reflexion",
+      "gold_answer": "Kelli Ward",
+      "predicted_answer": "Kelli Ward",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp23",
+      "agent_type": "reflexion",
+      "gold_answer": "The Wolfhounds",
+      "predicted_answer": "Hole was founded in 1989, while The Wolfhounds were formed in 1985. Therefore, The Wolfhounds were founded first.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "hp24",
+      "agent_type": "reflexion",
+      "gold_answer": "16-year-old",
+      "predicted_answer": "16 years old",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp25",
+      "agent_type": "reflexion",
+      "gold_answer": "World War II",
+      "predicted_answer": "World War II in 1945.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp26",
+      "agent_type": "reflexion",
+      "gold_answer": "Todd Phillips",
+      "predicted_answer": "Todd Phillips",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp27",
+      "agent_type": "reflexion",
+      "gold_answer": "Carol Lawrence",
+      "predicted_answer": "Eartha Kitt",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp28",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp29",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp30",
+      "agent_type": "reflexion",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp31",
+      "agent_type": "reflexion",
+      "gold_answer": "Amy Jo Johnson",
+      "predicted_answer": "Amy Jo Johnson",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp32",
+      "agent_type": "reflexion",
+      "gold_answer": "Aleksander Ford",
+      "predicted_answer": "Aleksander Ford",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp33",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp34",
+      "agent_type": "reflexion",
+      "gold_answer": "director",
+      "predicted_answer": "Both Nicholas Ray and Elia Kazan are film directors.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp35",
+      "agent_type": "reflexion",
+      "gold_answer": "Roseau, Minnesota, USA",
+      "predicted_answer": "The company that purchased Aixam, Polaris Industries, is based in Roseau, Minnesota, USA.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "hp36",
+      "agent_type": "reflexion",
+      "gold_answer": "The Saimaa Gesture",
+      "predicted_answer": "The Saimaa Gesture",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp37",
+      "agent_type": "reflexion",
+      "gold_answer": "David Lee Roth",
+      "predicted_answer": "David Lee Roth",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp38",
+      "agent_type": "reflexion",
+      "gold_answer": "Nassau County",
+      "predicted_answer": "Nassau County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp39",
+      "agent_type": "reflexion",
+      "gold_answer": "Australia",
+      "predicted_answer": "Australia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp40",
+      "agent_type": "reflexion",
+      "gold_answer": "California",
+      "predicted_answer": "California",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp41",
+      "agent_type": "reflexion",
+      "gold_answer": "Dessau",
+      "predicted_answer": "Dessau, Germany.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp42",
+      "agent_type": "reflexion",
+      "gold_answer": "Roman Catholic",
+      "predicted_answer": "Roman Catholic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp43",
+      "agent_type": "reflexion",
+      "gold_answer": "The Joshua Tree",
+      "predicted_answer": "The album that features Pauline Henry's popular cover song \"I Still Haven't Found What I'm Looking For\" is \"The Chimes.\"",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp44",
+      "agent_type": "reflexion",
+      "gold_answer": "Ulster County",
+      "predicted_answer": "Ulster County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp45",
+      "agent_type": "reflexion",
+      "gold_answer": "Tammy Wynette",
+      "predicted_answer": "Tammy Wynette",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp46",
+      "agent_type": "reflexion",
+      "gold_answer": "Sir Francis Nethersole",
+      "predicted_answer": "Elizabeth Stuart was born first, on August 19, 1596, while Francis Nethersole was born later, in 1587.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp47",
+      "agent_type": "reflexion",
+      "gold_answer": "ingredients in beer",
+      "predicted_answer": "The Hacker-Pschorr Brewery has to limit the ingredients in beer to comply with German regulations.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp48",
+      "agent_type": "reflexion",
+      "gold_answer": "Dennis Howard Marks",
+      "predicted_answer": "Howard Marks",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp49",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Sheehan",
+      "predicted_answer": "Robert Sheehan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp50",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp51",
+      "agent_type": "reflexion",
+      "gold_answer": "Glenn Hughes",
+      "predicted_answer": "Glenn Hughes is older.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp52",
+      "agent_type": "reflexion",
+      "gold_answer": "March 28, 1941",
+      "predicted_answer": "1941",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp53",
+      "agent_type": "reflexion",
+      "gold_answer": "standard gauge track",
+      "predicted_answer": "Standard gauge track.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp54",
+      "agent_type": "reflexion",
+      "gold_answer": "Sex and the City",
+      "predicted_answer": "Sex and the City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp55",
+      "agent_type": "reflexion",
+      "gold_answer": "Kato",
+      "predicted_answer": "Bruce Lee played Kato in \"The Green Hornet\" television series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp56",
+      "agent_type": "reflexion",
+      "gold_answer": "England",
+      "predicted_answer": "England",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp57",
+      "agent_type": "reflexion",
+      "gold_answer": "Province of Buenos Aires",
+      "predicted_answer": "The Estadio Ciudad de La Plata is owned by the Province of Buenos Aires.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp58",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Zemeckis",
+      "predicted_answer": "Robert Zemeckis",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp59",
+      "agent_type": "reflexion",
+      "gold_answer": "1932",
+      "predicted_answer": "1933",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp60",
+      "agent_type": "reflexion",
+      "gold_answer": "nine",
+      "predicted_answer": "Nine weeks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp61",
+      "agent_type": "reflexion",
+      "gold_answer": "Saint Motel",
+      "predicted_answer": "Saint Motel has more members.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp62",
+      "agent_type": "reflexion",
+      "gold_answer": "South Park",
+      "predicted_answer": "South Park",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp63",
+      "agent_type": "reflexion",
+      "gold_answer": "Boston College",
+      "predicted_answer": "Boston College",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp64",
+      "agent_type": "reflexion",
+      "gold_answer": "Victor John Mature",
+      "predicted_answer": "Victor Mature",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp65",
+      "agent_type": "reflexion",
+      "gold_answer": "Canada",
+      "predicted_answer": "Canada",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp66",
+      "agent_type": "reflexion",
+      "gold_answer": "Conservative",
+      "predicted_answer": "Conservative Party (UK)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp67",
+      "agent_type": "reflexion",
+      "gold_answer": "Salaam Bombay",
+      "predicted_answer": "\"Salaam Bombay\" (1988)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp68",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp69",
+      "agent_type": "reflexion",
+      "gold_answer": "Zooey Deschanel",
+      "predicted_answer": "Zooey Deschanel",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp70",
+      "agent_type": "reflexion",
+      "gold_answer": "15",
+      "predicted_answer": "15",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp71",
+      "agent_type": "reflexion",
+      "gold_answer": "Keyshia Cole",
+      "predicted_answer": "Keyshia Cole",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp72",
+      "agent_type": "reflexion",
+      "gold_answer": "filmmaker",
+      "predicted_answer": "Filmmaker",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp73",
+      "agent_type": "reflexion",
+      "gold_answer": "Golf Magazine",
+      "predicted_answer": "Golf Magazine",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp74",
+      "agent_type": "reflexion",
+      "gold_answer": "Mr. Burns",
+      "predicted_answer": "Mr. Burns funds the bowling team.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp75",
+      "agent_type": "reflexion",
+      "gold_answer": "Washington, D.C.",
+      "predicted_answer": "Washington, D.C.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp76",
+      "agent_type": "reflexion",
+      "gold_answer": "Band of Brothers",
+      "predicted_answer": "Peter O'Meara portrayed Norman Dike in the HBO miniseries \"Band of Brothers.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp77",
+      "agent_type": "reflexion",
+      "gold_answer": "Christopher Hitchens",
+      "predicted_answer": "Christopher Hitchens",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp78",
+      "agent_type": "reflexion",
+      "gold_answer": "R Adams Cowley",
+      "predicted_answer": "R Adams Cowley",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp79",
+      "agent_type": "reflexion",
+      "gold_answer": "Dennis Publishing",
+      "predicted_answer": "Dennis Publishing Ltd.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp80",
+      "agent_type": "reflexion",
+      "gold_answer": "Garth Brooks",
+      "predicted_answer": "Garth Brooks",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp81",
+      "agent_type": "reflexion",
+      "gold_answer": "Dirt",
+      "predicted_answer": "Dirt",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp82",
+      "agent_type": "reflexion",
+      "gold_answer": "The Fantastic The",
+      "predicted_answer": "The Fantastic The.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp83",
+      "agent_type": "reflexion",
+      "gold_answer": "1988",
+      "predicted_answer": "The winner of the 2016 Marrakesh ePrix, S\u00e9bastien Buemi, was born in 1988.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp84",
+      "agent_type": "reflexion",
+      "gold_answer": "Train to Busan",
+      "predicted_answer": "Train to Busan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp85",
+      "agent_type": "reflexion",
+      "gold_answer": "722,664",
+      "predicted_answer": "722,664",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp86",
+      "agent_type": "reflexion",
+      "gold_answer": "Max Gail",
+      "predicted_answer": "Max Gail",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp87",
+      "agent_type": "reflexion",
+      "gold_answer": "rock band",
+      "predicted_answer": "Richard Hawley and Chicago's Catherine belong to the rock music industry.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "hp88",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp89",
+      "agent_type": "reflexion",
+      "gold_answer": "dancer Gregory Hines",
+      "predicted_answer": "Maurice Hines and his brother were famous for performing in dance and musical theater.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp90",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "The Augusta Canal is approximately 13 miles long. The New Orleans Outfall Canals, which include the 17th Street Canal, Orleans Avenue Canal, and London Avenue Canal, collectively have a length of about 13 miles as well. Therefore, they are the same length.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "hp91",
+      "agent_type": "reflexion",
+      "gold_answer": "Gillette Stadium",
+      "predicted_answer": "Gillette Stadium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp92",
+      "agent_type": "reflexion",
+      "gold_answer": "Fu Manchu",
+      "predicted_answer": "Fu Manchu",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp93",
+      "agent_type": "reflexion",
+      "gold_answer": "CEO of Lionsgate UK & Europe",
+      "predicted_answer": "Zygi Kamasa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp94",
+      "agent_type": "reflexion",
+      "gold_answer": "Swoosie Kurtz",
+      "predicted_answer": "Swoosie Kurtz",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp95",
+      "agent_type": "reflexion",
+      "gold_answer": "Lullwater Estate",
+      "predicted_answer": "Lullwater Estate",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp96",
+      "agent_type": "reflexion",
+      "gold_answer": "the Sumerians",
+      "predicted_answer": "The cuneiform script was invented by the Sumerians.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "hp97",
+      "agent_type": "reflexion",
+      "gold_answer": "17%",
+      "predicted_answer": "Approximately 17% of the global population is made up of the Han Chinese.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp98",
+      "agent_type": "reflexion",
+      "gold_answer": "David Lyle Boren",
+      "predicted_answer": "David Boren",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp99",
+      "agent_type": "reflexion",
+      "gold_answer": "Lawrence County",
+      "predicted_answer": "Lawrence County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp100",
+      "agent_type": "reflexion",
+      "gold_answer": "MedStar Washington Hospital Center",
+      "predicted_answer": "MedStar Washington Hospital Center",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion helps when the first attempt stops after the first hop or drifts to a wrong second-hop entity. The tradeoff is higher attempts, token cost, and latency. In a real report, students should explain when the reflection memory was useful, which failure modes remained, and whether evaluator quality limited gains."
+}
